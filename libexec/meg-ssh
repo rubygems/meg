@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Usage: meg ssh [command...]
+# Summary: SSH into the RubyGems.org cluster.
+# Help: This can be combined with more commands, for example:
+#
+#    meg ssh ls -lah
+set -e
+
+exec ssh -t -C $USER@app01-aws.rubygems.org "$@"

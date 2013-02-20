@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Usage: meg console
+# Summary: Fire up a Rails console remotely
+# Help: SSH directly into a Rails console for RubyGems.org
+
+set -e
+
+exec meg-ssh 'cd /applications/rubygems/production/current && sudo -u deploy ./script/rails console production'
