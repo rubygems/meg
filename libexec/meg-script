@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Usage: meg script
+# Summary: Run a script inside the RubyGems.org Rails directory
+# Help: SSH directly RubyGems.org and run a script
+
+set -e
+
+exec meg-ssh "cd /applications/rubygems/production/current && sudo -u deploy ./script/$@"

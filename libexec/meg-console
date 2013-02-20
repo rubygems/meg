@@ -5,4 +5,4 @@
 
 set -e
 
-exec meg-ssh 'cd /applications/rubygems/production/current && sudo -u deploy ./script/rails console production'
+exec meg-script rails console production
