@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Usage: meg logs
+# Summary: Tail the application logs
+# Help: SSH directly to RubyGems.org and tail the application logs
+
+set -e
+
+exec meg-ssh "tail -f /etc/service/rubygems/log/main/current"
