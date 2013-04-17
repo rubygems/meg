@@ -18,3 +18,11 @@ For zsh users:
 
     $ echo 'eval "$($HOME/.meg/bin/meg init -)"' >> ~/.zshenv
     $ source ~/.zshenv
+
+## Usage
+
+    $ meg
+    
+If your local username is different than your remote username:
+
+    $ USER=johndoe meg
