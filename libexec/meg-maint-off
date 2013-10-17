@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Usage: meg maint-off
 # Summary: Disable maintenance mode
-# Help: SSH to balancer02 and remove the maintenance symlink
+# Help: SSH to load balancer and remove the maintenance symlink
 
 set -e
 
-exec ssh -t -C $USER@54.245.255.174 "sudo rm /opt/nginx/html/maintenance.html"
+exec ssh -t -C $USER@rubygems.org "sudo rm /opt/nginx/html/maintenance.html"
