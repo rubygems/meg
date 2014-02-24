@@ -5,4 +5,4 @@
 
 set -e
 
-exec meg-ssh "cd /applications/rubygems/production/current && sudo -u deploy ./script/$@"
+exec meg-ssh "cd /applications/rubygems/current && sudo -u deploy ./script/$@"

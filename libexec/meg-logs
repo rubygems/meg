@@ -5,4 +5,4 @@
 
 set -e
 
-exec meg-ssh "tail -f /etc/service/rubygems/log/main/current"
+exec meg-ssh "tail -f /etc/service/unicorn/log/main/current"

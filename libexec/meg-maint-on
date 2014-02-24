@@ -5,4 +5,4 @@
 
 set -e
 
-exec ssh -t -C $USER@rubygems.org "sudo ln -s /opt/nginx/conf/maintenance.html /opt/nginx/html/maintenance.html"
+exec ssh -t -C balancer02-aws.rubygems.org "sudo ln -s /opt/nginx/conf/maintenance.html /opt/nginx/html/maintenance.html"
