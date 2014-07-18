@@ -4,25 +4,11 @@ Quick commands to help administer and support RubyGems.org.
 
 Currently helps with SSH'ing into the RubyGems.org infrastructure and running commands.
 
-## Installation
-
-    $ cd
-    $ git clone git://github.com/rubygems/meg.git .meg
-
-For bash users:
-
-    $ echo 'eval "$($HOME/.meg/bin/meg init -)"' >> ~/.bash_profile
-    $ exec bash
-
-For zsh users:
-
-    $ echo 'eval "$($HOME/.meg/bin/meg init -)"' >> ~/.zshenv
-    $ source ~/.zshenv
+These commands are configured for use on RubyGems.org servers only, and should not be installed or used locally.
 
 ## Usage
 
     $ meg
-    
-If your local username is different than your remote username:
-
-    $ USER=johndoe meg
+    $ meg commands
+    $ meg maint-on
+    $ meg maint-off
