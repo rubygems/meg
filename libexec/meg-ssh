@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
-# Usage: meg ssh [command...]
-# Summary: SSH into the RubyGems.org app server.
+# Usage: meg ssh <host> [command...]
+# Summary: SSH into a RubyGems.org server.
 # Help: This can be combined with more commands, for example:
 #
-#    meg ssh ls -lah
+#    meg ssh app01 ls -lah
 set -e
 
-exec ssh -t -C app02-aws.rubygems.org "$@"
+HOST=$1
+shift
+
+exec ssh -t -C $HOST "$@"

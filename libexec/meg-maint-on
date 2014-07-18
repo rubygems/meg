@@ -5,4 +5,4 @@
 
 set -e
 
-exec ssh -t -C balancer02-aws.rubygems.org "sudo ln -s /opt/nginx/conf/maintenance.html /opt/nginx/html/maintenance.html"
+exec meg-ssh $MEG_BALANCER_HOST "sudo ln -s /etc/nginx/maintenance.html /var/www/rubygems/maintenance.html"
