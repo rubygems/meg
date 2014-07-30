@@ -6,4 +6,4 @@
 #    meg ssh ls -lah
 set -e
 
-exec ssh -t -C app02-aws.rubygems.org "$@"
+exec ssh -t -C app02.production.rubygems.org "$@"
