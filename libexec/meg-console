@@ -5,4 +5,4 @@
 
 set -e
 
-exec meg-script rails console production
+exec meg-ssh "cd /applications/rubygems/current && sudo /usr/bin/chpst -u deploy:deploy -e /etc/sv/unicorn/env /usr/local/bin/bundle exec rails console"
