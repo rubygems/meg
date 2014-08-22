@@ -5,4 +5,4 @@
 
 set -e
 
-exec meg-ssh $MEG_APP_HOST "cd /applications/rubygems/current && ./script/$@"
+exec meg-ssh $MEG_APP_HOST "cd /applications/rubygems/current && sudo /usr/bin/chpst -u deploy:deploy -e /etc/sv/unicorn/env ./script/$@"
